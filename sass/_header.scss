@@ -1,0 +1,51 @@
+.header {
+  width: 70%;
+  height: 50rem;
+  margin: 10rem auto;
+  border: 1rem solid $color-primary;
+
+  &__box {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+
+    &--text {
+      flex: 1;
+      align-self: center;
+      position: relative;
+      z-index: 7;
+      & h1 {
+        @include font-700-bold;
+        line-height: 200%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 6rem;
+        color: #fff;
+        background-color: transparent;
+        transform: translateX(15rem);
+        transition: all 0.4s;
+      }
+      &:hover h1 {
+        transform: translateX(10rem);
+      }
+    }
+
+    &--image {
+      flex: 0 0 50%;
+      background-image: linear-gradient(
+          rgba($color-secondary, 0.8),
+          rgba($color-secondary, 0.8)
+        ),
+        url('../img/personal-img-1.jpg');
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1.2) translate(4rem, 2rem);
+      }
+    }
+  }
+}

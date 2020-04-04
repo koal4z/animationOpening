@@ -1,0 +1,52 @@
+$color-primary: #ffcd00;
+$color-primary-light: #ffe166;
+
+$color-secondary: #3016b0;
+$color-secondary-light: #4a2dd8;
+
+$color-grey-light-1: #d3d3d3;
+$color-grey-light-2: #f0efef;
+
+$color-grey-dark-1: #808080;
+$color-grey-dark-2: #686868;
+
+$font: 'Exo 2', sans-serif;
+
+@mixin font-400 {
+  font-family: $font;
+  font-weight: 400;
+}
+
+@mixin font-200 {
+  font-family: $font;
+  font-weight: 200;
+}
+
+@mixin font-200-italic {
+  font-family: $font;
+  font-weight: 200;
+  font-style: italic;
+}
+
+@mixin font-700-bold {
+  font-family: $font;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-secondary;
+}
